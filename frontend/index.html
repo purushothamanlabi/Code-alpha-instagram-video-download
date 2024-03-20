@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Video download</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+    <style>
+      .banner-ad {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc(100vw - 100px);
+        height: 40vh;
+      }
+
+      .banner-ad img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      .language-option {
+        display: flex;
+        align-items: center;
+      }
+
+      .language-option svg {
+        margin-left: 5px;
+      }
+
+      select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+
+        background-image: url("path_to_your_custom_arrow_icon.svg");
+        background-repeat: no-repeat;
+        background-position: right center;
+
+        padding-right: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg-gradient-to-r from-[#6e45e2] to-[#88d3ce]">
+      <nav class="flex justify-between items-center py-4 px-8">
+        <div class="text-white font-bold text-2xl" id="logo-title">FastDL</div>
+        <div class="flex space-x-4">
+          <a class="text-white hover:text-gray-200" href="#">Video Downloader</a
+          ><a class="text-white hover:text-gray-200" href="#"
+            >Photo Downloader</a
+          ><a class="text-white hover:text-gray-200" href="#"
+            >Reels Downloader</a
+          ><a class="text-white hover:text-gray-200" href="#">Story Saver</a
+          ><a class="text-white hover:text-gray-200" href="#">Story Viewer</a>
+        </div>
+
+        <div class="flex items-center space-x-4">
+          <a class="text-white hover:text-gray-200" href="#">FAQ</a>
+
+          <select
+            role="combobox"
+            aria-controls="radix-:r1a:"
+            aria-expanded="false"
+            aria-autocomplete="none"
+            dir="ltr"
+            data-state="closed"
+            data-placeholder=""
+            class="flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            id="language"
+          >
+            <option value="EN">English</option>
+            <option value="FR">French</option>
+            <option value="ES">Spanish</option>
+            <option value="DE">German</option>
+            <option value="IT">Italian</option>
+          </select>
+        </div>
+      </nav>
+      <div class="px-8 py-12">
+        <div class="flex space-x-4 mb-8 items-center justify-center">
+          <button
+            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 px-4 py-2 bg-white text-[#6e45e2]"
+          >
+            Video</button
+          ><button
+            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 px-4 py-2 bg-[#6e45e2] text-white"
+          >
+            Photo</button
+          ><button
+            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 px-4 py-2 bg-[#6e45e2] text-white"
+          >
+            Reels</button
+          ><button
+            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 px-4 py-2 bg-[#6e45e2] text-white"
+          >
+            Stories</button
+          ><button
+            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 px-4 py-2 bg-[#6e45e2] text-white"
+          >
+            IGTV</button
+          ><button
+            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 px-4 py-2 bg-[#6e45e2] text-white"
+          >
+            Carousel
+          </button>
+        </div>
+        <div class="text-center text-white mb-6">
+          <h1 class="text-5xl font-bold mb-2">Instagram Downloader</h1>
+          <p class="text-xl">
+            Download Instagram Videos, Photos, Reels, IGTV &amp; carousel
+          </p>
+        </div>
+        <div class="flex justify-center items-center space-x-4 mb-8">
+          <input
+            class="flex h-10 rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-96"
+            placeholder="Insert instagram link here"
+            type="text"
+            id="instagramUrl"
+          /><button
+            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 px-4 py-2 bg-white text-[#6e45e2]"
+          >
+            Paste
+          </button>
+          <button
+            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 px-4 py-2 bg-[#6e45e2] text-white"
+            id="downloadButton"
+          >
+            Download
+          </button>
+        </div>
+        <div class="banner-ad">
+          <img src="./25190682_7071800.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const queryParams = new URLSearchParams(window.location.search);
+      const name = queryParams.get("name");
+
+      document.getElementById("logo-title").innerHTML = name;
+
+      const pasteButton = document.getElementById("pasteButton");
+      const downloadButton = document.getElementById("downloadButton");
+      downloadButton.addEventListener("click", () => {
+        const instagramUrl = document.getElementById("instagramUrl").value;
+        console.log(instagramUrl);
+
+        fetch("http://localhost:5000/downloadInstagramVideo", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ instagramUrl }),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data);
+
+            window.location.href = data.videoUrl;
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+      });
+
+      pasteButton.addEventListener("click", async () => {
+        try {
+          const pastedText = await navigator.clipboard.readText();
+          document.getElementById("instagramUrl").value = pastedText;
+        } catch (error) {
+          console.error("Error pasting text: ", error);
+        }
+      });
+    </script>
+  </body>
+</html>
